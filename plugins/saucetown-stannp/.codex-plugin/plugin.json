@@ -1,0 +1,19 @@
+{
+  "name": "saucetown-stannp",
+  "version": "0.1.0+codex.20260918174637",
+  "description": "Fender's read-only Sauce Town Stannp connection for Codex.",
+  "author": {
+    "name": "Fender Industries"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Saucetown Stannp",
+    "shortDescription": "Use Saucetown Stannp in Codex.",
+    "longDescription": "Read connection status, balance, and bounded reporting through a company-scoped Fender Tools connection.",
+    "developerName": "Fender Industries",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Use my Sauce Town Stannp connection for a read-only task."
+  },
+  "mcpServers": "./.mcp.json"
+}

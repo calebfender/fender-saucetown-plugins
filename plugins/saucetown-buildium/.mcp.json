@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "saucetown-buildium": {
+      "url": "https://tools-mcp.fenderindustries.com/mcp/buildium",
+      "startup_timeout_sec": 30,
+      "tool_timeout_sec": 60
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "saucetown-stannp": {
+      "url": "https://tools-mcp.fenderindustries.com/mcp/stannp",
+      "startup_timeout_sec": 30,
+      "tool_timeout_sec": 60
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "fender-saucetown",
+  "interface": {
+    "displayName": "Fender Saucetown"
+  },
+  "plugins": [
+    {
+      "name": "saucetown-buildium",
+      "source": {
+        "source": "local",
+        "path": "./plugins/saucetown-buildium"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "saucetown-stannp",
+      "source": {
+        "source": "local",
+        "path": "./plugins/saucetown-stannp"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

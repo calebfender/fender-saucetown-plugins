@@ -1,0 +1,19 @@
+{
+  "name": "saucetown-buildium",
+  "version": "0.1.0+codex.20260918174637",
+  "description": "Fender's read-only Sauce Town Buildium connection for Codex.",
+  "author": {
+    "name": "Fender Industries"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Saucetown Buildium",
+    "shortDescription": "Use Saucetown Buildium in Codex.",
+    "longDescription": "Read permitted Buildium records through a company-scoped Fender Tools connection.",
+    "developerName": "Fender Industries",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Use my Sauce Town Buildium connection for a read-only task."
+  },
+  "mcpServers": "./.mcp.json"
+}
