@@ -13,15 +13,26 @@ Forgot your password? Use https://portal.fenderindustries.com/reset.
 
 ## Install
 
-In a terminal where the Codex CLI is installed, run:
+For individual Codex desktop accounts, add this public marketplace once on
+each computer. In a terminal where the Codex CLI is installed, run:
 
 ```sh
 codex plugin marketplace add https://github.com/calebfender/fender-saucetown-plugins
+```
+
+Restart Codex, open **Plugins**, and choose the **Fender Saucetown** marketplace.
+Open **Saucetown Buildium** and click **Install**. Repeat for **Saucetown Stannp**.
+Plugin-directory labels can vary with the app version. This marketplace setup
+is documented in [OpenAI's plugin guide](https://developers.openai.com/plugins/build/plugins#add-a-marketplace-from-the-cli).
+
+If you prefer to install through the terminal, the equivalent commands are:
+
+```sh
 codex plugin add saucetown-buildium@fender-saucetown
 codex plugin add saucetown-stannp@fender-saucetown
 ```
 
-These commands install skills and hosted MCP connection settings. No separate
+The plugins contain skills and hosted MCP connection settings. No separate
 Fender desktop application, native installer, provider API key, or manually
 created personal token is needed.
 
