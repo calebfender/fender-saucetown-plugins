@@ -1,6 +1,6 @@
 {
   "name": "saucetown-buildium",
-  "version": "0.1.0+codex.20260918174637",
+  "version": "0.1.1",
   "description": "Fender's read-only Sauce Town Buildium connection for Codex.",
   "author": {
     "name": "Fender Industries"
