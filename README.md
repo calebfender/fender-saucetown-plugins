@@ -1,6 +1,6 @@
 # SauceTown plugins for Codex
 
-Read-only Buildium and Stannp tools for authorized SauceTown Properties staff,
+Buildium and Stannp reads and human-approved changes for authorized SauceTown Properties staff,
 provided by Fender Industries. This public repository contains only plugins
 and skills. Installing them does not grant access to company data.
 
@@ -13,8 +13,15 @@ Forgot your password? Use https://portal.fenderindustries.com/reset.
 
 ## Install
 
-For individual Codex desktop accounts, add this public marketplace once on
-each computer. In a terminal where the Codex CLI is installed, run:
+For individual Codex desktop accounts, add this public marketplace once on each computer. In **Add plugin marketplace**, enter:
+
+- Source: `calebfender/fender-saucetown-plugins`
+- Git ref: `main`
+- Sparse paths: leave empty
+
+A bare `github.com/...` is not a valid source; use the owner/repository form above. If `fender-saucetown` already exists from another source, remove that marketplace entry before adding this one.
+
+Alternatively, in a terminal where the Codex CLI is installed, run:
 
 ```sh
 codex plugin marketplace add https://github.com/calebfender/fender-saucetown-plugins
@@ -52,9 +59,9 @@ For Stannp, ask:
 
 > Use the SauceTown Stannp plugin to check my connection and show the current account balance. Do not send mail or change anything.
 
-Buildium tools allow permitted reads only. Stannp supports status, balance and
-bounded reporting; sending mail, changing recipients and topping up are not
-available. Permissions are checked on the server for each request.
+Version 0.2.0 also discovers supported changes and prepares proposals. Fender must grant your write permissions separately. Each proposal gives you an approval link at https://portal.fenderindustries.com/approvals. Review the company, account and exact details, then confirm there with your portal password. The plugin cannot approve on your behalf. Never paste the password into chat.
+
+This release supports individually approved Buildium changes and Stannp letter/postcard proposals. Six Buildium JSON Patch operations and other Stannp mutations are not included. Recurring automatic workflows are not yet available. A draft or uncertain result must never be treated as a completed change or blindly retried.
 
 ## Manage access
 
@@ -81,6 +88,4 @@ contact without including credentials or private company records.
 
 ## Verification status
 
-Both providers have passed authenticated live reads through the hosted
-platform, and permission/security tests pass. A complete real-client Codex
-browser authorization and tool-call acceptance test is still pending.
+Both providers have passed authenticated live reads through the hosted platform, including real-client Codex use. The individual write flow is covered by automated tests and synthetic browser/container tests. Live provider mutations have not been performed during this release validation. Test a representative client-approved sandbox or provider-test workflow before live production changes.
